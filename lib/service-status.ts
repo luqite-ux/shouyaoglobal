@@ -19,7 +19,7 @@ export async function isWebsiteServiceAvailable(): Promise<boolean> {
     if (!response.ok) return true
 
     const payload = (await response.json()) as PublicServiceStatus
-    if (payload.version !== 1) return true
+    if (!(payload.version === 1)) return true
     return !(payload.available === false && payload.status === 'expired')
   } catch {
     return true
