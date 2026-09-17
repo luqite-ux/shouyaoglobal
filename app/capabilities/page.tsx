@@ -6,6 +6,7 @@ import { SectionHeading } from "@/components/section-heading"
 import { EvidenceGallery } from "@/components/evidence-gallery"
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/capabilities" },
   title: "Capabilities | TIANYU ELECTRIC",
   description:
     "Manufacturing, high-voltage testing and quality management capability evidence for TIANYU ELECTRIC (Fuzhou Tianyu Electric Co., Ltd.).",

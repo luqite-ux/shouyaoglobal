@@ -8,6 +8,7 @@ import { SectionHeading } from "@/components/section-heading"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/applications" },
   title: "Applications | TIANYU ELECTRIC",
   description:
     "TIANYU ELECTRIC compact substations and distribution transformers are applied in wind power, photovoltaic, energy storage and urban distribution networks.",

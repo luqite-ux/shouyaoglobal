@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { resolveLocalizedText } from "@/lib/i18n"
 import { products as fallbackProducts } from "@/lib/products"
 import { fetchProductBySlug, fetchProductsData } from "@/lib/products-db"
+import { siteConfig } from "@/lib/site-config"
 
 export const revalidate = 60
 export const dynamicParams = true
@@ -28,6 +29,8 @@ export async function generateMetadata({
   return {
     title: `${resolveLocalizedText(product.name)} | TIANYU ELECTRIC`,
     description: resolveLocalizedText(product.summary),
+    alternates: { canonical: `/products/${product.slug}` },
+    openGraph: { title: resolveLocalizedText(product.name), description: resolveLocalizedText(product.summary), url: `/products/${product.slug}`, type: "website", images: [{ url: product.image, alt: resolveLocalizedText(product.imageAlt) }] },
   }
 }
 
@@ -41,9 +44,15 @@ export default async function ProductDetailPage({
   if (!product) notFound()
 
   const related = (await fetchProductsData()).filter((p) => p.slug !== product.slug).slice(0, 3)
+  const productUrl = `${siteConfig.url}/products/${product.slug}`
+  const schema = { "@context": "https://schema.org", "@graph": [
+    { "@type": "Product", "@id": `${productUrl}#product`, name: resolveLocalizedText(product.name), description: resolveLocalizedText(product.summary), image: [new URL(product.image, siteConfig.url).toString()], manufacturer: { "@id": `${siteConfig.url}/#organization` }, url: productUrl },
+    { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url }, { "@type": "ListItem", position: 2, name: "Products", item: `${siteConfig.url}/products` }, { "@type": "ListItem", position: 3, name: resolveLocalizedText(product.shortName), item: productUrl }] },
+  ] }
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
       <section className="border-b border-border bg-secondary/40 py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="text-xs">

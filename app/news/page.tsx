@@ -8,6 +8,7 @@ import { getPublishedArticles } from "@/lib/articles-db"
 export const revalidate = 60
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/news" },
   title: "News | TIANYU ELECTRIC",
   description: "Company news and updates from TIANYU ELECTRIC.",
 }

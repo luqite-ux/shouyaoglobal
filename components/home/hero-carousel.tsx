@@ -64,6 +64,7 @@ export function HeroCarousel() {
       <div className="relative h-[560px] sm:h-[620px] lg:h-[680px]">
         {heroSlides.map((slide, i) => {
           const isActive = i === index
+          const Heading = i === 0 ? "h1" : "h2"
           return (
             <div
               key={slide.id}
@@ -101,9 +102,9 @@ export function HeroCarousel() {
               <div className="relative flex h-full max-w-7xl flex-col justify-center px-4 pb-16 pt-10 sm:px-6 sm:pb-24 lg:mx-auto lg:px-8">
                 <div className="max-w-xl">
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">{slide.eyebrow}</p>
-                  <h1 className="mt-3 font-heading text-3xl font-semibold uppercase leading-[1.08] tracking-tight text-white sm:text-4xl lg:text-5xl">
+                  <Heading className="mt-3 font-heading text-3xl font-semibold uppercase leading-[1.08] tracking-tight text-white sm:text-4xl lg:text-5xl">
                     {slide.headline}
-                  </h1>
+                  </Heading>
                   <ul className="mt-5 flex flex-col gap-1.5 text-sm text-white/85 sm:flex-row sm:flex-wrap sm:gap-x-6">
                     {slide.proofPoints.map((point) => (
                       <li key={point} className="flex items-center gap-2">

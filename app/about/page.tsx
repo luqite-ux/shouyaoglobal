@@ -5,6 +5,7 @@ import { SectionHeading } from "@/components/section-heading"
 import { siteConfig } from "@/lib/site-config"
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about" },
   title: "About Us | TIANYU ELECTRIC",
   description:
     "TIANYU ELECTRIC (Fuzhou Tianyu Electric Co., Ltd.) was formed from the combination of the Fuzhou First Switch Factory, Fuzhou Second Switch Factory and Fuzhou Transformer Factory.",

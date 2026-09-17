@@ -7,6 +7,7 @@ import { Reveal } from "@/components/motion/reveal"
 import { siteConfig } from "@/lib/site-config"
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/contact" },
   title: "Contact & Request a Quote | TIANYU ELECTRIC",
   description:
     "Contact TIANYU ELECTRIC or submit a product-specific request for quote for distribution transformers and compact substations.",
