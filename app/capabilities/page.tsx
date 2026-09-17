@@ -105,7 +105,7 @@ export default function CapabilitiesPage() {
                 description="Fuzhou Tianyu Electric Co., Ltd. holds a GB/T 19001-2016 / ISO 9001:2015 quality management system certification, registration number 01424Q10028R8M, issued by China United Certification Center (Beijing) Co., Ltd. The certified scope covers the design, production and service of gas-insulated switchgear (72.5 kV and below), high-voltage switches (40.5 kV and below), high- and low-voltage switchgear cabinets, combined transformers and prefabricated substations (35 kV and below), low-loss oil-immersed transformers (220 kV and below), offshore wind-power transformers (66 kV and below) and low-loss dry-type transformers (35 kV and below)."
               />
             </Reveal>
-            <Reveal delay={90} className="relative aspect-[4/5] max-w-xs justify-self-center overflow-hidden border border-border bg-card sm:max-w-sm">
+            <Reveal delay={90} className="relative aspect-[4/5] w-full max-w-xs justify-self-center overflow-hidden border border-border bg-card sm:max-w-sm">
               <Image
                 src="/images/certifications/iso-9001-certificate.jpg"
                 alt="GB/T 19001-2016 / ISO 9001:2015 quality management system certificate issued to Fuzhou Tianyu Electric Co., Ltd."
