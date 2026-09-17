@@ -17,7 +17,7 @@ export async function generateMetadata({
   const article = await getArticleBySlug(slug)
   if (!article) return {}
   return {
-    title: `${article.title} | TIANYU ELECTRIC`,
+    title: article.title,
     description: article.excerpt,
     alternates: { canonical: `/news/${article.slug}` },
     openGraph: { title: article.title, description: article.excerpt, url: `/news/${article.slug}`, type: "article", publishedTime: article.publishedAt || undefined, images: article.featuredImage ? [{ url: article.featuredImage }] : undefined },

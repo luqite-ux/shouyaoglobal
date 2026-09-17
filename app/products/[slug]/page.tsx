@@ -27,7 +27,7 @@ export async function generateMetadata({
   const product = await fetchProductBySlug(slug)
   if (!product) return {}
   return {
-    title: `${resolveLocalizedText(product.name)} | TIANYU ELECTRIC`,
+    title: resolveLocalizedText(product.name),
     description: resolveLocalizedText(product.summary),
     alternates: { canonical: `/products/${product.slug}` },
     openGraph: { title: resolveLocalizedText(product.name), description: resolveLocalizedText(product.summary), url: `/products/${product.slug}`, type: "website", images: [{ url: product.image, alt: resolveLocalizedText(product.imageAlt) }] },

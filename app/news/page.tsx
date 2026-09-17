@@ -9,7 +9,7 @@ export const revalidate = 60
 
 export const metadata: Metadata = {
   alternates: { canonical: "/news" },
-  title: "News | TIANYU ELECTRIC",
+  title: "News",
   description: "Company news and updates from TIANYU ELECTRIC.",
 }
 

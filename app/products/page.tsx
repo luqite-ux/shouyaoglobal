@@ -5,7 +5,7 @@ import { ProductsCatalog } from "./products-catalog"
 
 export const metadata: Metadata = {
   alternates: { canonical: "/products" },
-  title: "Products | TIANYU ELECTRIC",
+  title: "Products",
   description:
     "Browse the S(B)20(22) series distribution transformer and European-style, Hua-style and American-type compact substation product families from TIANYU ELECTRIC.",
 }

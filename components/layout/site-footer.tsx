@@ -6,6 +6,7 @@ import { products } from "@/lib/products"
 
 export function SiteFooter() {
   const year = new Date().getFullYear()
+  const copyrightOwner = siteConfig.legalNameEn.replace(/[.;:!?；：！？。\s]+$/u, "")
 
   return (
     <footer className="border-t border-border bg-secondary">
@@ -79,7 +80,7 @@ export function SiteFooter() {
 
         <div className="mt-10 flex flex-col gap-3 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {year} {siteConfig.legalNameEn}. All rights reserved.
+            © {year} {copyrightOwner}. All rights reserved.
           </p>
           <p className="text-muted-foreground/80">{siteConfig.domain}</p>
         </div>
