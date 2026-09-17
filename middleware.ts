@@ -1,7 +1,8 @@
 import { NextResponse, type NextRequest } from 'next/server'
 import { SESSION_COOKIE } from '@/lib/admin-session'
+import { isServiceGuardExcludedPath, isWebsiteServiceAvailable } from '@/lib/service-status'
 
-export function middleware(request: NextRequest) {
+export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
 
   const isPublicAdminPath =
@@ -17,9 +18,15 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(url)
   }
 
+  if (!isServiceGuardExcludedPath(pathname) && !(await isWebsiteServiceAvailable())) {
+    const url = request.nextUrl.clone()
+    url.pathname = '/service-expired'
+    return NextResponse.rewrite(url)
+  }
+
   return NextResponse.next()
 }
 
 export const config = {
-  matcher: ['/admin/:path*'],
+  matcher: ['/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|css|js|woff2?)$).*)'],
 }
