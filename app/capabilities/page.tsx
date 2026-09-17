@@ -3,6 +3,7 @@ import Image from "next/image"
 import { PageHero } from "@/components/layout/page-hero"
 import { Reveal } from "@/components/motion/reveal"
 import { SectionHeading } from "@/components/section-heading"
+import { EvidenceGallery } from "@/components/evidence-gallery"
 
 export const metadata: Metadata = {
   title: "Capabilities | TIANYU ELECTRIC",
@@ -115,6 +116,7 @@ export default function CapabilitiesPage() {
           </div>
         </div>
       </section>
+      <EvidenceGallery />
     </>
   )
 }
