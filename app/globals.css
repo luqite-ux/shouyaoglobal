@@ -1,0 +1,258 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.16 0.005 260);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.16 0.005 260);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.16 0.005 260);
+  --primary: oklch(0.16 0.005 260);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0.002 260);
+  --secondary-foreground: oklch(0.16 0.005 260);
+  --muted: oklch(0.965 0.002 260);
+  --muted-foreground: oklch(0.4 0.01 260);
+  --accent: oklch(0.965 0.002 260);
+  --accent-foreground: oklch(0.16 0.005 260);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.9 0.003 260);
+  --input: oklch(0.9 0.003 260);
+  --ring: oklch(0.55 0.21 25);
+  --brand: oklch(0.55 0.21 25);
+  --brand-foreground: oklch(0.99 0 0);
+  --brand-dark: oklch(0.42 0.19 25);
+  --graphite: oklch(0.32 0.008 260);
+  --ink: oklch(0.16 0.005 260);
+  --silver: oklch(0.96 0.002 260);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.article-prose { color: var(--muted-foreground); line-height: 1.8; }
+.article-prose h2, .article-prose h3 { margin-top: 1.75rem; color: var(--foreground); font-family: var(--font-oswald), sans-serif; font-weight: 600; }
+.article-prose p, .article-prose ul, .article-prose ol { margin-top: 1rem; }
+.article-prose ul, .article-prose ol { padding-left: 1.5rem; }
+.article-prose a { color: var(--brand); text-decoration: underline; text-underline-offset: 3px; }
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --font-heading: var(--font-display), 'Geist', sans-serif;
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-brand-dark: var(--brand-dark);
+  --color-graphite: var(--graphite);
+  --color-ink: var(--ink);
+  --color-silver: var(--silver);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Technical grid backdrop, used sparingly behind key sections */
+.bg-technical-grid {
+  background-image:
+    linear-gradient(to right, color-mix(in oklch, var(--graphite) 8%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklch, var(--graphite) 8%, transparent) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.hazard-rule {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--brand) 0 10px,
+    var(--ink) 10px 20px
+  );
+}
+
+/*
+ * MOT-TY-02 / MOT-TY-01 / MOT-TY-03 viewport reveal system.
+ * Base state (no attributes) is always fully visible so that content
+ * never depends on JavaScript. The hidden/transition state is only
+ * applied once html[data-motion-ready] AND html.motion-enabled are
+ * both present, which requires the synchronous bootstrap script in
+ * the document head to have run successfully.
+ */
+html.motion-enabled[data-motion-ready] .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 560ms cubic-bezier(0.16, 1, 0.3, 1), transform 560ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: calc(var(--reveal-delay, 0) * 1ms);
+}
+
+html.motion-enabled[data-motion-ready] .reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+html.motion-enabled[data-motion-ready] .reveal-lamination {
+  opacity: 0;
+  clip-path: inset(0 0 100% 0);
+  transform: translateY(12px);
+  transition: opacity 560ms ease, clip-path 560ms cubic-bezier(0.16, 1, 0.3, 1), transform 560ms ease;
+  transition-delay: calc(var(--reveal-delay, 0) * 1ms);
+}
+
+html.motion-enabled[data-motion-ready] .reveal-lamination.is-visible {
+  opacity: 1;
+  clip-path: inset(0 0 0% 0);
+  transform: translateY(0);
+}
+
+@media (max-width: 640px) {
+  html.motion-enabled[data-motion-ready] .reveal {
+    transform: translateY(12px);
+    transition-duration: 420ms;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.motion-enabled[data-motion-ready] .reveal,
+  html.motion-enabled[data-motion-ready] .reveal-lamination {
+    opacity: 1;
+    transform: none;
+    clip-path: none;
+    transition: none;
+  }
+}
+
+/* MOT-TY-04 precision control feedback */
+.control-feedback {
+  transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
+}
+.control-feedback:hover {
+  transform: translateY(-2px);
+}
+.control-feedback:active {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .control-feedback:hover {
+    transform: none;
+  }
+}
+
+/* MOT-TY-01 energized field-line hero sweep: a single restrained pass,
+   never repeating on a timer. Disabled entirely under reduced motion. */
+@keyframes field-sweep {
+  0% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(340%);
+    opacity: 0;
+  }
+}
+
+.animate-field-sweep {
+  animation: field-sweep 1.8s cubic-bezier(0.4, 0, 0.2, 1) 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-field-sweep {
+    animation: none;
+    opacity: 0;
+  }
+}
