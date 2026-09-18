@@ -4,19 +4,28 @@ import { ArrowRight } from "lucide-react"
 import type { Product } from "@/lib/products"
 import { resolveLocalizedText } from "@/lib/i18n"
 
+const productCardCovers: Record<string, string> = {
+  "sb20-22-distribution-transformer": "/images/products/card-covers/distribution-transformer.png",
+  "european-style-compact-substation": "/images/products/card-covers/european-compact-substation.png",
+  "hua-style-compact-substation": "/images/products/card-covers/hua-style-compact-substation.png",
+  "american-type-compact-substation": "/images/products/card-covers/american-compact-substation.png",
+}
+
 export function ProductCard({ product }: { product: Product }) {
+  const coverImage = productCardCovers[product.slug] || product.image || "/placeholder.svg"
+
   return (
     <Link
       href={`/products/${product.slug}`}
       className="control-feedback group flex h-full flex-col border border-border bg-card"
     >
-      <div className="relative flex aspect-[4/3] items-center justify-center bg-gradient-to-b from-white to-secondary p-6">
+      <div className="relative aspect-[4/3] overflow-hidden bg-white">
         <Image
-          src={product.image || "/placeholder.svg"}
+          src={coverImage}
           alt={resolveLocalizedText(product.imageAlt)}
           fill
           sizes="(min-width: 1024px) 320px, (min-width: 640px) 45vw, 90vw"
-          className="object-contain p-6"
+          className="object-cover"
         />
       </div>
       <div className="flex flex-1 flex-col gap-3 border-t border-border p-5">
