@@ -96,12 +96,12 @@ export function HeroCarousel() {
                     )}
                   />
                 )}
-                <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/35 to-transparent sm:from-ink/80 sm:via-ink/20" />
+                <div className="absolute inset-0 bg-gradient-to-b from-ink/80 via-ink/65 to-ink/20 sm:bg-gradient-to-r sm:from-ink/80 sm:via-ink/20 sm:to-transparent" />
               </div>
 
               <div className="relative flex h-full max-w-7xl flex-col justify-center px-4 pb-16 pt-10 sm:px-6 sm:pb-24 lg:mx-auto lg:px-8">
                 <div className="max-w-xl">
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">{slide.eyebrow}</p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-200">{slide.eyebrow}</p>
                   <Heading className="mt-3 font-heading text-3xl font-semibold uppercase leading-[1.08] tracking-tight text-white sm:text-4xl lg:text-5xl">
                     {slide.headline}
                   </Heading>
