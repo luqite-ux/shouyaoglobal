@@ -14,14 +14,14 @@ export function Logo({ className, showWordmark = false }: { className?: string; 
         className="h-[68px] w-[68px] shrink-0 object-contain sm:h-20 sm:w-20"
       />
       {showWordmark ? (
-        <span className="relative block h-10 w-[155px] shrink-0 overflow-hidden sm:h-12 sm:w-[190px]" aria-hidden="true">
+        <span className="relative block h-[34px] w-[135px] shrink-0 translate-y-[3px] overflow-hidden sm:h-10 sm:w-[162px]" aria-hidden="true">
           <Image
             src="/images/logo.png"
             alt=""
             width={1254}
             height={1254}
             priority
-            className="absolute -left-[21px] -top-[124px] h-[195px] w-[195px] max-w-none sm:-left-[27px] sm:-top-[153px] sm:h-[240px] sm:w-[240px]"
+            className="absolute -left-[19px] -top-[109px] h-[170px] w-[170px] max-w-none sm:-left-[23px] sm:-top-[131px] sm:h-[205px] sm:w-[205px]"
           />
         </span>
       ) : (
