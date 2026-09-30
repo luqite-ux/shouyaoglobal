@@ -1,8 +1,8 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Mail, Phone, MapPin } from "lucide-react"
 import { navLinks, siteConfig } from "@/lib/site-config"
 import { products } from "@/lib/products"
+import { Logo } from "@/components/layout/logo"
 
 export function SiteFooter() {
   const year = new Date().getFullYear()
@@ -14,15 +14,7 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr_1fr_1.2fr]">
           <div>
-            <Link href="/" aria-label="Shouyao Power home" className="inline-block">
-              <Image
-              src="/images/logo.png"
-              alt="Shouyao Power logo"
-              width={1254}
-              height={1254}
-              className="h-20 w-auto max-w-full object-contain"
-              />
-            </Link>
+            <Logo />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">{siteConfig.tagline}</p>
           </div>
 

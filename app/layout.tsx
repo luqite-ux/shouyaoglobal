@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   icons: {
-    icon: "/images/logo.png",
-    shortcut: "/images/logo.png",
-    apple: "/images/logo.png",
+    icon: "/images/shouyao-mark.png",
+    shortcut: "/images/shouyao-mark.png",
+    apple: "/images/shouyao-mark.png",
   },
   openGraph: {
     title: `${siteConfig.brandName} | Distribution Transformers & Compact Substations`,
