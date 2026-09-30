@@ -13,7 +13,7 @@ export function Logo({ className }: { className?: string }) {
         priority
         className="h-14 w-14 shrink-0 object-contain sm:h-16 sm:w-16"
       />
-      <span className="hidden font-heading text-sm font-semibold tracking-wide text-foreground sm:block">{siteConfig.brandName}</span>
+      <span className="font-heading text-sm font-semibold tracking-wide text-foreground">{siteConfig.brandName}</span>
     </Link>
   )
 }

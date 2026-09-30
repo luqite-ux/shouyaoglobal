@@ -26,9 +26,9 @@ export function DeliveryProcess() {
           {steps.map((step, i) => {
             const Icon = step.icon
             return (
-              <Reveal key={step.title} variant="lamination" delay={i * 70} className="relative pl-14 sm:pl-0 sm:text-center">
+              <Reveal key={step.title} variant="lamination" delay={i * 70} className="sm:text-center">
                 <div className="flex items-center gap-4 sm:flex-col sm:items-center sm:gap-3">
-                  <span className="absolute left-0 top-0 flex size-10 items-center justify-center border border-brand text-sm font-semibold text-brand sm:relative sm:size-12">
+                  <span className="flex size-10 items-center justify-center border border-brand text-sm font-semibold text-brand sm:size-12">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <Icon className="hidden size-6 text-brand sm:block" aria-hidden="true" />
