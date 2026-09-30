@@ -28,7 +28,7 @@ export function ManufacturingEvidence() {
           <SectionHeading
             eyebrow="Manufacturing & Testing"
             title="Evidence Behind Every Delivery"
-            description="A representative view of the manufacturing and high-voltage testing capability supporting TIANYU ELECTRIC production."
+            description="A representative view of the manufacturing and testing capability supporting Shouyao Power products."
           />
         </Reveal>
 

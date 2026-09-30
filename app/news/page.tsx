@@ -10,7 +10,7 @@ export const revalidate = 60
 export const metadata: Metadata = {
   alternates: { canonical: "/news" },
   title: "News",
-  description: "Company news and updates from TIANYU ELECTRIC.",
+  description: "Company news and updates from Shouyao Power.",
 }
 
 export default async function NewsPage() {
@@ -21,7 +21,7 @@ export default async function NewsPage() {
       <PageHero
         eyebrow="News"
         title="Company News"
-        description="Updates on TIANYU ELECTRIC products, capability and delivery projects."
+        description="Updates on Shouyao Power products, capability and delivery projects."
       />
 
       <section className="py-16 sm:py-24">
@@ -31,7 +31,7 @@ export default async function NewsPage() {
               <Newspaper className="size-8 text-muted-foreground" aria-hidden="true" />
               <h2 className="mt-4 font-heading text-lg font-semibold text-foreground">No News Published Yet</h2>
               <p className="mt-2 max-w-sm text-sm leading-relaxed text-muted-foreground">
-                TIANYU ELECTRIC has not published any news articles on this site yet. Published updates will appear
+                Shouyao Power has not published any news articles on this site yet. Published updates will appear
                 here as they become available.
               </p>
             </Reveal>

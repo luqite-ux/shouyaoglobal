@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/about" },
   title: "About Us",
   description:
-    "TIANYU ELECTRIC (Fuzhou Tianyu Electric Co., Ltd.) was formed from the combination of the Fuzhou First Switch Factory, Fuzhou Second Switch Factory and Fuzhou Transformer Factory.",
+    "Learn about Shouyao Power Technology (Jiangsu) Co., Ltd., its distribution transformers and compact substations.",
 }
 
 export default function AboutPage() {
@@ -16,28 +16,28 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About Us"
-        title="TIANYU ELECTRIC"
-        description="Fuzhou Tianyu Electric Co., Ltd. — 福州天宇电气股份有限公司"
+        title="Shouyao Power"
+        description="Shouyao Power Technology (Jiangsu) Co., Ltd. — 首耀电力科技（江苏）有限公司"
       />
 
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <SectionHeading eyebrow="Company Background" title="Our History" />
+            <SectionHeading eyebrow="Company Background" title="About Shouyao Power" />
             <div className="mt-6 space-y-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
               <p>
-                TIANYU ELECTRIC, the brand of Fuzhou Tianyu Electric Co., Ltd. (福州天宇电气股份有限公司), was formed from
-                the combination of the Fuzhou First Switch Factory, the Fuzhou Second Switch Factory and the Fuzhou
-                Transformer Factory.
+                Shouyao Power Technology (Jiangsu) Co., Ltd. (首耀电力科技（江苏）有限公司) was established in February 2026.
+                The company operates in the power and electrical equipment sector with registered capital of RMB 100 million.
               </p>
               <p>
-                Company materials trace the roots of these predecessor factories to 1958, with the current company
-                formed in 1995.
+                Its business scope includes the manufacture and sale of power transmission and distribution equipment,
+                switchgear, transformers, photovoltaic equipment and power electronic components. It also covers
+                technical services, energy storage technology and new-energy research and development.
               </p>
               <p>
-                Today, TIANYU ELECTRIC manufactures distribution transformers and compact substation platforms for
-                utility, industrial and renewable-energy power networks, supported by manufacturing and high-voltage
-                testing capability at its Fuzhou facility.
+                Shouyao Power offers distribution transformers, high- and low-voltage switchgear, and compact
+                substations for utility, industrial and renewable-energy applications. Its company materials describe
+                production lines and inspection equipment supporting these product families.
               </p>
             </div>
           </Reveal>

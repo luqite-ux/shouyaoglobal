@@ -1,16 +1,16 @@
 export const siteConfig = {
-  brandName: "TIANYU ELECTRIC",
-  legalNameEn: "Fuzhou Tianyu Electric Co., Ltd.",
-  legalNameZh: "福州天宇电气股份有限公司",
+  brandName: "Shouyao Power",
+  legalNameEn: "Shouyao Power Technology (Jiangsu) Co., Ltd.",
+  legalNameZh: "首耀电力科技（江苏）有限公司",
   domain: "shouyaoglobal.com",
   url: "https://shouyaoglobal.com",
   email: "info@shouyaoglobal.com",
-  phone: "+86 137 6383 9179",
-  phoneHref: "+8613763839179",
-  address: "No. 28 Yaoxi Road, Nanyu Town, Minhou County, Fuzhou, Fujian, China",
-  tagline: "Distribution transformers and compact substations engineered for demanding networks.",
+  phone: "+86 177 5157 5888",
+  phoneHref: "+8617751575888",
+  address: "Building 666, north of North Third Ring Road and south of Sizhonggou, Hede Town Industrial Park, Sheyang County, Jiangsu, China",
+  tagline: "Distribution transformers and compact substations for power networks.",
   description:
-    "TIANYU ELECTRIC (Fuzhou Tianyu Electric Co., Ltd.) manufactures distribution transformers and compact substations for global B2B power infrastructure buyers.",
+    "Shouyao Power Technology (Jiangsu) Co., Ltd. manufactures distribution transformers and compact substations for power distribution and renewable-energy applications.",
 } as const
 
 export const navLinks = [

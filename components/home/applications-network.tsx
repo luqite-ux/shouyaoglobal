@@ -24,7 +24,7 @@ export function ApplicationsNetwork() {
           <SectionHeading
             eyebrow="System Relationship"
             title="From Distribution to Point of Use"
-            description="TIANYU ELECTRIC transformers and compact substations sit inside the same power-delivery chain, serving renewable-generation and distribution applications alike."
+            description="Shouyao Power transformers and compact substations sit inside the same power-delivery chain, serving renewable-generation and distribution applications alike."
           />
         </Reveal>
 

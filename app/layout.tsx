@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     url: siteConfig.url,
     siteName: siteConfig.brandName,
     type: "website",
-    images: [{ url: "/images/heroes/hero-distribution-transformer.jpg", alt: "TIANYU ELECTRIC distribution transformer" }],
+    images: [{ url: "/images/heroes/hero-distribution-transformer.jpg", alt: "Shouyao Power distribution transformer" }],
   },
   twitter: { card: "summary_large_image", title: siteConfig.brandName, description: siteConfig.description, images: ["/images/heroes/hero-distribution-transformer.jpg"] },
   alternates: { canonical: "/" },

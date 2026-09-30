@@ -3,14 +3,14 @@ import Link from "next/link"
 
 export function Logo({ className }: { className?: string }) {
   return (
-    <Link href="/" className={className} aria-label="TIANYU ELECTRIC home">
+    <Link href="/" className={className} aria-label="Shouyao Power home">
       <Image
         src="/images/logo.png"
-        alt="TIANYU ELECTRIC logo"
-        width={220}
-        height={64}
+        alt="Shouyao Power logo"
+        width={1536}
+        height={1024}
         priority
-        className="h-10 w-auto object-contain sm:h-12"
+        className="h-14 w-auto object-contain sm:h-16"
       />
     </Link>
   )

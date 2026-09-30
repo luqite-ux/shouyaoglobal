@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/products" },
   title: "Products",
   description:
-    "Browse the S(B)20(22) series distribution transformer and European-style, Hua-style and American-type compact substation product families from TIANYU ELECTRIC.",
+    "Browse the S(B)20(22) series distribution transformer and European-style, Hua-style and American-type compact substation product families from Shouyao Power.",
 }
 
 export const revalidate = 60

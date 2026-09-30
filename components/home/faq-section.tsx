@@ -4,24 +4,34 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqs = [
   {
-    question: "What product families does TIANYU ELECTRIC manufacture?",
+    question: "What product families does Shouyao Power manufacture?",
     answer:
-      "TIANYU ELECTRIC manufactures the S(B)20(22) series distribution transformer and European-style, Hua-style and American-type compact substation platforms for 35 kV and below applications.",
+      "Shouyao Power offers S(B)20(22) series distribution transformers and European-style, Hua-style and American-type compact substations for 35 kV and below applications.",
   },
   {
-    question: "How do I request pricing for a specific product?",
+    question: "Can products be customized?",
     answer:
-      "Pricing is not published online. Submit a product-specific inquiry through the Request a Quote form and our team will respond with details based on your requirements.",
+      "Yes. Share your voltage, capacity, configuration and application requirements when requesting a quote.",
   },
   {
-    question: "Can compact substations be configured for renewable-energy projects?",
+    question: "What is the minimum order quantity?",
     answer:
-      "Yes. The European-style, Hua-style and American-type compact substation platforms are applied in wind power, photovoltaic, energy storage and urban distribution scenarios, with voltage and capacity options listed on each product page.",
+      "The minimum order quantity is one set.",
   },
   {
-    question: "Is high-voltage testing performed before delivery?",
+    question: "What is the typical production lead time?",
     answer:
-      "Completed units are verified in the high-voltage test hall as part of the production and delivery process described on the Capabilities page.",
+      "The indicated production lead time is 45–60 days after ordering. Confirm the schedule for your configuration with our team.",
+  },
+  {
+    question: "Are technical data sheets, test reports and third-party inspections available?",
+    answer:
+      "Technical data sheets and inspection reports are available, and third-party inspection is supported. Request the applicable documents for your product configuration.",
+  },
+  {
+    question: "Do you offer samples or OEM/ODM services?",
+    answer:
+      "Samples and OEM/ODM services are not offered. Custom product configurations can be discussed before production.",
   },
 ]
 

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Website Service Notice | TIANYU ELECTRIC',
+  title: 'Website Service Notice | Shouyao Power',
   robots: { index: false, follow: false },
 }
 

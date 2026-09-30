@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/applications" },
   title: "Applications",
   description:
-    "TIANYU ELECTRIC compact substations and distribution transformers are applied in wind power, photovoltaic, energy storage and urban distribution networks.",
+    "Shouyao Power compact substations and distribution transformers are applied in wind power, photovoltaic, energy storage and urban distribution networks.",
 }
 
 const applications = [
@@ -55,7 +55,7 @@ export default function ApplicationsPage() {
       <PageHero
         eyebrow="Applications"
         title="Applications Across Power Networks"
-        description="Verified application scenarios for TIANYU ELECTRIC distribution transformers and compact substation platforms, drawn from customer product materials."
+        description="Application scenarios for Shouyao Power distribution transformers and compact substation platforms."
       />
 
       <section className="py-16 sm:py-20">

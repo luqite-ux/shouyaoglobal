@@ -68,7 +68,7 @@ export function InquiryForm() {
         <CheckCircle2 className="size-8 text-brand" aria-hidden="true" />
         <h2 className="font-heading text-lg font-semibold text-foreground">Inquiry Received</h2>
         <p className="max-w-sm text-sm text-muted-foreground">
-          Thank you for contacting TIANYU ELECTRIC. Our team will follow up using the contact details you provided.
+          Thank you for contacting Shouyao Power. Our team will follow up using the contact details you provided.
         </p>
       </div>
     )

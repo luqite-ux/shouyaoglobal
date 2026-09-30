@@ -13,7 +13,7 @@ function LoginForm() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-cyan-50 p-4">
       <div className="w-full max-w-md rounded-2xl border border-slate-200 bg-white p-8 shadow-lg">
         <div className="mb-6 text-center">
-          <h1 className="text-2xl font-bold text-slate-900">福州天宇电气股份有限公司</h1>
+          <h1 className="text-2xl font-bold text-slate-900">首耀电力科技（江苏）有限公司</h1>
           <p className="mt-2 text-sm text-slate-500">网站管理后台登录</p>
           <p className="mt-1 text-xs text-slate-400">登录后将自动进入管理后台，只需登录一次</p>
         </div>

@@ -13,13 +13,15 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr_1fr_1.2fr]">
           <div>
-            <Image
+            <Link href="/" aria-label="Shouyao Power home" className="inline-block">
+              <Image
               src="/images/logo.png"
-              alt="TIANYU ELECTRIC logo"
-              width={200}
-              height={58}
-              className="h-10 w-auto object-contain"
-            />
+              alt="Shouyao Power logo"
+              width={1536}
+              height={1024}
+              className="h-20 w-auto max-w-full object-contain"
+              />
+            </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">{siteConfig.tagline}</p>
           </div>
 

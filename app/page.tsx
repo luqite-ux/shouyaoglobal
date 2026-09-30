@@ -12,9 +12,9 @@ import { RfqCta } from "@/components/home/rfq-cta"
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
-  title: "TIANYU ELECTRIC | Distribution Transformers & Compact Substations",
+  title: "Shouyao Power | Distribution Transformers & Compact Substations",
   description:
-    "TIANYU ELECTRIC (Fuzhou Tianyu Electric Co., Ltd.) manufactures S(B)20(22) series distribution transformers and European-style, Hua-style and American-type compact substations for global B2B power infrastructure buyers.",
+    "Shouyao Power Technology (Jiangsu) Co., Ltd. manufactures S(B)20(22) series distribution transformers and European-style, Hua-style and American-type compact substations.",
 }
 
 export default function HomePage() {
