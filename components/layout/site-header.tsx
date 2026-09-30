@@ -16,8 +16,8 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="h-[3px] w-full hazard-rule" aria-hidden="true" />
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:h-[88px] sm:px-6 lg:px-8">
-        <Logo />
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-1 px-4 sm:h-[88px] sm:gap-4 sm:px-6 lg:px-8">
+        <Logo showWordmark />
 
         <nav aria-label="Primary" className="hidden lg:block">
           <ul className="flex items-center gap-1">
@@ -59,7 +59,7 @@ export function SiteHeader() {
           aria-expanded={open}
           aria-controls="mobile-nav"
           aria-label={open ? "Close menu" : "Open menu"}
-          className="control-feedback flex h-11 w-11 items-center justify-center border border-border text-foreground lg:hidden"
+          className="control-feedback flex h-11 w-11 shrink-0 items-center justify-center border border-border text-foreground lg:hidden"
         >
           {open ? <X className="size-5" aria-hidden="true" /> : <Menu className="size-5" aria-hidden="true" />}
         </button>
