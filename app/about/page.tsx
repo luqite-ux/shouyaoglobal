@@ -17,7 +17,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About Us"
         title="Shouyao Power"
-        description="Shouyao Power Technology (Jiangsu) Co., Ltd. — 首耀电力科技（江苏）有限公司"
+        description="Shouyao Power Technology (Jiangsu) Co., Ltd."
       />
 
       <section className="py-16 sm:py-20">
@@ -26,7 +26,7 @@ export default function AboutPage() {
             <SectionHeading eyebrow="Company Background" title="About Shouyao Power" />
             <div className="mt-6 space-y-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
               <p>
-                Shouyao Power Technology (Jiangsu) Co., Ltd. (首耀电力科技（江苏）有限公司) was established in February 2026.
+                Shouyao Power Technology (Jiangsu) Co., Ltd. was established in February 2026.
                 The company operates in the power and electrical equipment sector with registered capital of RMB 100 million.
               </p>
               <p>
@@ -48,10 +48,6 @@ export default function AboutPage() {
               <div>
                 <dt className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Legal Entity</dt>
                 <dd className="mt-1 text-sm text-foreground">{siteConfig.legalNameEn}</dd>
-              </div>
-              <div>
-                <dt className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Chinese Name</dt>
-                <dd className="mt-1 text-sm text-foreground">{siteConfig.legalNameZh}</dd>
               </div>
               <div className="sm:col-span-2">
                 <dt className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Address</dt>

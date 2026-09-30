@@ -45,7 +45,7 @@ export default function ContactPage() {
               </li>
             </ul>
             <p className="mt-6 text-xs leading-relaxed text-muted-foreground">
-              {siteConfig.legalNameEn} ({siteConfig.legalNameZh})
+              {siteConfig.legalNameEn}
             </p>
           </Reveal>
 

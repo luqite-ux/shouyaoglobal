@@ -1,7 +1,6 @@
 export const siteConfig = {
   brandName: "Shouyao Power",
   legalNameEn: "Shouyao Power Technology (Jiangsu) Co., Ltd.",
-  legalNameZh: "首耀电力科技（江苏）有限公司",
   domain: "shouyaoglobal.com",
   url: "https://shouyaoglobal.com",
   email: "info@shouyaoglobal.com",
