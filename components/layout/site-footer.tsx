@@ -7,6 +7,7 @@ import { products } from "@/lib/products"
 export function SiteFooter() {
   const year = new Date().getFullYear()
   const copyrightOwner = siteConfig.legalNameEn.replace(/[.;:!?；：！？。\s]+$/u, "")
+  const copyrightLine = `© ${year} ${copyrightOwner}. All rights reserved.`
 
   return (
     <footer className="border-t border-border bg-secondary">
@@ -17,8 +18,8 @@ export function SiteFooter() {
               <Image
               src="/images/logo.png"
               alt="Shouyao Power logo"
-              width={1536}
-              height={1024}
+              width={1254}
+              height={1254}
               className="h-20 w-auto max-w-full object-contain"
               />
             </Link>
@@ -81,9 +82,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-10 flex flex-col gap-3 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>
-            © {year} {copyrightOwner}. All rights reserved.
-          </p>
+          <p>{copyrightLine}</p>
           <p className="text-muted-foreground/80">{siteConfig.domain}</p>
         </div>
       </div>
