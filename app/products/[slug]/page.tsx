@@ -7,6 +7,7 @@ import { Reveal } from "@/components/motion/reveal"
 import { ProductCard } from "@/components/products/product-card"
 import { Button } from "@/components/ui/button"
 import { resolveLocalizedText } from "@/lib/i18n"
+import { sanitizeProductRichText } from "@/lib/product-rich-text"
 import { products as fallbackProducts } from "@/lib/products"
 import { fetchProductBySlug, fetchProductsData } from "@/lib/products-db"
 import { siteConfig } from "@/lib/site-config"
@@ -82,9 +83,12 @@ export default async function ProductDetailPage({
               <h1 className="mt-2 font-heading text-2xl font-semibold uppercase tracking-tight text-foreground sm:text-3xl">
                 {resolveLocalizedText(product.name)}
               </h1>
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
-                {resolveLocalizedText(product.description)}
-              </p>
+              <div
+                className="article-prose mt-4 text-sm sm:text-base"
+                dangerouslySetInnerHTML={{
+                  __html: sanitizeProductRichText(resolveLocalizedText(product.description)),
+                }}
+              />
 
               <dl className="mt-8 grid grid-cols-1 gap-px overflow-hidden border border-border bg-border sm:grid-cols-2">
                 {product.specs.map((spec) => (
